@@ -10,5 +10,7 @@ def read_file()
 end
 
 # write
+def write_file()
+    file = File.open
 # append
 read_file()
