@@ -1,16 +1,28 @@
-# read
-def read_file()
-    file = File.open('name.txt', 'r')
-    
-    counter = 1
-    file.readlines.each do |line|
-        puts counter.to_s + ": " + line
-        counter = counter + 1
+# Read file
+def read_file
+    File.open('name.txt', 'r') do |file|
+      file.each_line.with_index(1) do |line, counter|
+        puts "#{counter}: #{line}"
+      end
     end
-end
-
-# write
-def write_file()
-    file = File.open
-# append
-read_file()
+  end
+  
+  # Write file
+  def write_file
+    File.open('name.txt', 'w') do |file|
+      file.write("I really love tech\n")
+    end
+  end
+  
+  # Append file
+  def append_file
+    File.open('name.txt', 'a') do |file|
+      file.write("I really love tech\n")
+    end
+  end
+  
+  # Call the functions
+  write_file()
+  append_file()
+  read_file()
+  
