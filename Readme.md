@@ -1,5 +1,4 @@
-# Ruby Basics: Learning Journey and Projects
-
+# Ruby Basics
 ## Introduction
 
 This repository contains notes and explanations summarizing the basic concepts of Ruby programming, along with a **Temperature Converter Project**. The Temperature Converter allows users to input a temperature in either Fahrenheit or Celsius and converts it to the other unit.
